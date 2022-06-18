@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Footer from './Footer';
+import Videos from './Videos';
 
 function Home() {
   return (
-    <div>
+    <>
       <section className='home_section'>
         <div className='container-fluid home'>
           <div className='row'>
@@ -55,7 +55,8 @@ function Home() {
         </div>
       </section>
       {/* video  */}
-      <section className='newsletter mt-5'>
+      <Videos />
+      <section className='newsletter'>
         <div className='container'>
           <form action='' className='newsletterform'>
             <h2 className='text-light py-4'>New music coming soon!</h2>
@@ -71,7 +72,7 @@ function Home() {
           </form>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

@@ -1,23 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 /* navbar section */
 .AJ a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.AJ a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.my-nav {
+  background-color: transparent;
+  transition: 0.8s all ease;
+}
+.my-nav.scroll {
+  background-color: #0f0f0f;
+  transition: 0.6s all ease;
+  box-shadow: 0 4px 4px 0 #303030;
 }
 
 .navbar {
+  /* position: fixed; */
   padding: 1rem !important;
-  margin: 0 1rem;
 }
-.logo {
+
+.hamburgerBars {
   color: white;
-}
-.logo:hover {
-  color: white;
-  text-decoration: none;
-}
-#hamburger-btn {
-  color: rgb(255, 255, 255);
-  border: none;
   font-size: 1.5rem;
+}
+.navbar-toggler {
+  border: 0 !important;
 }
 .nav_links ul {
   display: flex;
@@ -25,24 +41,21 @@
 
 .single_link {
   list-style-type: none;
-  margin-left: 0.8rem;
-  font-weight: 500;
 }
 .single_link a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 .single_link a:hover {
-  color: white;
   text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.nav-link {
+  color: white !important;
 }
 .nav_socials a {
   color: rgb(255, 255, 255);
-  font-size: 1.3rem;
-  margin-left: 0.5rem;
-}
-.nav_socials a:hover {
-  color: white;
+  font-size: large;
 }
 /* end of navbar section  */
 
@@ -134,8 +147,9 @@
   background-repeat: no-repeat;
 }
 .newsletterform {
-  padding-top: 60vh;
+  margin-top: 60vh;
 }
+
 .input_email {
   border: none;
   background-color: white;
@@ -146,6 +160,9 @@
   min-height: 10vh;
   display: flex;
   align-items: center;
+}
+.footer a:hover {
+  color: black;
 }
 .input_signUp {
   background-color: transparent;
@@ -158,21 +175,9 @@
   color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
 }
-.bookings_socials a {
-  color: #82320a;
-  font-size: 1.3rem;
-  margin-left: 0.5rem;
-}
-.bookings_socials a:hover {
-  color: #82320a;
-}
 .footer_socials a {
   color: rgb(0, 0, 0);
-  font-size: 1.3rem;
-  margin-left: 0.5rem;
-}
-.footer_socials a:hover {
-  color: black;
+  font-size: large;
 }
 .bookings p {
   color: #82320a;
@@ -182,8 +187,8 @@
 .bookings a {
   color: #82320a;
 }
-#lname {
-  margin-left: 3px;
+.bookings a:hover {
+  color: #82320a;
 }
 #message,
 #mail,
@@ -239,11 +244,6 @@
 }
 .small {
   display: none;
-}
-@media all and (max-width: 1200px) {
-  #lname {
-    margin-left: 0;
-  }
 }
 @media all and (max-width: 768px) {
   .main_sec {

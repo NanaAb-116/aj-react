@@ -20,34 +20,34 @@ function Footer() {
                   target='blank'
                   href='https://soundcloud.com/nana-a-j/sets/train-of-thought'
                 >
-                  <FaSoundcloud />
+                  <FaSoundcloud className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://www.facebook.com/atotheflippingj/'
                 >
-                  <FaFacebookF />
+                  <FaFacebookF className='mx-2' />
                 </a>
                 <a target='blank' href='https://www.instagram.com/nana_a.j/'>
-                  <FaInstagram />
+                  <FaInstagram className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://twitter.com/atotheflippingj?s=20&t=jgDe3BM8MflcevUmnfSs5w'
                 >
-                  <FaTwitter />
+                  <FaTwitter className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://open.spotify.com/artist/1NKZ7szc37Mlo5wTwm2tHA?si=mohAOJDFQXqSiMkhDFVI7g'
                 >
-                  <FaSpotify />
+                  <FaSpotify className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://www.youtube.com/playlist?list=OLAK5uy_kKdgIi68Smtyjd8GrEc-jrad3q2kf5Q6s'
                 >
-                  <FaYoutube />
+                  <FaYoutube className='mx-2' />
                 </a>
               </div>
             </div>

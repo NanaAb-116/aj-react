@@ -29,19 +29,15 @@ function Tour() {
                 <tbody>
                   <tr>
                     <td>TBA</td>
-                    <td>Special December</td>
+                    <td>Saved to Serve Music Concert - France</td>
                   </tr>
                   <tr>
-                    <td>5th November 2022</td>
+                    <td>4th November 2022</td>
                     <td>A.J and Friends</td>
                   </tr>
                   <tr>
-                    <td>16th May, 2022</td>
-                    <td>Umsonst und Draußen Festival Würzburg 2022</td>
-                  </tr>
-                  <tr>
                     <td>TBA</td>
-                    <td>Saved to Serve Music Concert - France</td>
+                    <td>Special December</td>
                   </tr>
                 </tbody>
               </table>
@@ -56,8 +52,20 @@ function Tour() {
                     <th scope='col'>Date</th>
                     <th scope='col'>Event</th>
                   </tr>
+                  <tr>
+                    <td>16th June, 2022</td>
+                    <td>Umsonst und Draußen Festival Würzburg 2022</td>
+                  </tr>
+                  <tr>
+                    <td>26th May, 2022</td>
+                    <td>We Go Dey Cool EP Virtual Release Party</td>
+                  </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>23rd May, 2022</td>
+                    <td>Music Pool Berlin Artist Meetup</td>
+                  </tr>
                   <tr>
                     <td>March, 2021</td>
                     <td>Benefit Concert Berlin 2022</td>

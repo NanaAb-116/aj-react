@@ -23,49 +23,49 @@ function Contact() {
       <section className='contact_form'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-6 bookings_socials'>
+            <div className='col-md-6 bookings'>
               <h3 className='mb-4'>Details</h3>
               <a href='#'>
-                <p className='my-5 px-0'>BOOKINGS</p>
+                <p>BOOKINGS</p>
               </a>
-              <div className='py-5 bookings-social'>
+              <div className='mt-5 bookings-social'>
                 <a
                   target='blank'
                   href='https://soundcloud.com/nana-a-j/sets/train-of-thought'
                 >
-                  <FaSoundcloud />
+                  <FaSoundcloud className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://www.facebook.com/atotheflippingj/'
                 >
-                  <FaFacebookF />
+                  <FaFacebookF className='mx-2' />
                 </a>
                 <a target='blank' href='https://www.instagram.com/nana_a.j/'>
-                  <FaInstagram />
+                  <FaInstagram className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://twitter.com/atotheflippingj?s=20&t=jgDe3BM8MflcevUmnfSs5w'
                 >
-                  <FaTwitter />
+                  <FaTwitter className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://open.spotify.com/artist/1NKZ7szc37Mlo5wTwm2tHA?si=mohAOJDFQXqSiMkhDFVI7g'
                 >
-                  <FaSpotify />
+                  <FaSpotify className='mx-2' />
                 </a>
                 <a
                   target='blank'
                   href='https://www.youtube.com/playlist?list=OLAK5uy_kKdgIi68Smtyjd8GrEc-jrad3q2kf5Q6s'
                 >
-                  <FaYoutube />
+                  <FaYoutube className='mx-2' />
                 </a>
               </div>
             </div>
             <div className='col-md-6'>
-              <form action=''>
+              <form action='' className='contact-form'>
                 <label>Name *</label>
                 <br />
                 <input
