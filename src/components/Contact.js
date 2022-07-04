@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   FaFacebookF,
   FaSoundcloud,
@@ -9,6 +9,9 @@ import {
 } from 'react-icons/fa';
 
 function Contact() {
+  useEffect(() => {
+    document.title = 'Contact | Nana A.J';
+  }, []);
   return (
     <div>
       <section className='contact_section'>
@@ -25,7 +28,7 @@ function Contact() {
           <div className='row my-5'>
             <div className='col-md-6 bookings'>
               <h3 className='mb-4'>Details</h3>
-              <a href='#'>
+              <a href='mailto:nanaaj007@gmail.com'>
                 <p>BOOKINGS</p>
               </a>
               <div className='mt-5 bookings-social'>

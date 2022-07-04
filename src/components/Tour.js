@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Tour() {
+  useEffect(() => {
+    document.title = 'Tour | Nana A.J';
+  }, []);
   return (
     <div>
       <section className='tour_section'>

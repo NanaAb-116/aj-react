@@ -21,11 +21,11 @@ function App() {
       <Routes>
         <Route path='/' element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path='/news' element={<News />} />
-          <Route path='/videos' element={<Video />} />
-          <Route path='/bio' element={<Bio />} />
-          <Route path='/tour' element={<Tour />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='news' element={<News />} />
+          <Route path='videos' element={<Video />} />
+          <Route path='bio' element={<Bio />} />
+          <Route path='tour' element={<Tour />} />
+          <Route path='contact' element={<Contact />} />
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>

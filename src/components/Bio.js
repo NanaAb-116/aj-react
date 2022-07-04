@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Bio() {
+  useEffect(() => {
+    document.title = 'Bio | Nana A.J';
+  }, []);
   return (
     <div>
       <section className='bio_section'>

@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function News() {
+  useEffect(() => {
+    document.title = 'News | Nana A.J';
+  }, []);
   return (
     <div>
       <section className='news_section'>

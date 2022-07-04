@@ -154,7 +154,15 @@
   padding: 1rem;
 }
 .signup-btn {
-  padding: 1rem;
+  margin-left: 0.25rem;
+  border: 0;
+  height: 3.6rem;
+  width: 5rem;
+}
+.signup-btn:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
 }
 .email,
 .fName,
@@ -162,7 +170,7 @@
 .message {
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;
-  width: 30rem;
+  width: 80%;
 }
 .required::after {
   content: '*';
@@ -171,7 +179,12 @@
 }
 .submit-btn {
   margin-top: 1rem;
-  padding: 0.5rem 1.5rem;
+  height: 3.6rem;
+  width: 6rem;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: black;
 }
 
 .footer {
@@ -218,13 +231,6 @@
 }
 
 @media all and (max-width: 530px) {
-  #lname,
-  #fname,
-  #mail,
-  #message {
-    width: 22rem;
-    height: 2.5rem;
-  }
   .main_sec {
     margin-top: 20vh;
   }
