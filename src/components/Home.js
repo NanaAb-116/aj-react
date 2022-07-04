@@ -55,21 +55,32 @@ function Home() {
         </div>
       </section>
       {/* video  */}
-      <Videos />
+      <section id='videos'>
+        <Videos />
+      </section>
       <section className='newsletter'>
         <div className='container'>
-          <form action='' className='newsletterform'>
-            <h2 className='text-light py-4'>New music coming soon!</h2>
-            <h6 className='text-light pb-5'>
-              Sign up to be amongst the first to hear it.
-            </h6>
-            <input
-              type='email'
-              className='input_email'
-              placeholder='Email Address'
-            />
-            <input type='submit' className='input_signUp' value='Sign Up' />
-          </form>
+          <div className='row'>
+            <div className='col-md-5 ml-auto'>
+              <form
+                className='newsletterform'
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                <h1>New music coming soon!</h1>
+                <p>Sign up to be amongst the first to hear it.</p>
+                <input
+                  className='email-input'
+                  type='text'
+                  placeholder='Email Address'
+                />
+                <button type='submit' className='signup-btn'>
+                  Sign Up
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </>

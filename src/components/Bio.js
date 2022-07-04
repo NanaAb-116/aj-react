@@ -14,7 +14,7 @@ function Bio() {
       </section>
       <section className='contact_form'>
         <div className='container'>
-          <div className='row justify-content-center'>
+          <div className='row justify-content-center my-5'>
             <div className='col-sm-12 col-md-6'>
               <p>
                 Nana A.J is a Berlin based Rap artist and producer from Accra,

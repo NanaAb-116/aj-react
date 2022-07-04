@@ -4,7 +4,7 @@ function Videos() {
   return (
     <div>
       <section>
-        <div id='videos' className='container'>
+        <div className='container'>
           <div className='row mx-auto'>
             <div className='col-md-12'>
               <h2 className='text-center my-5'>SEASONS</h2>

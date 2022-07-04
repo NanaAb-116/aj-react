@@ -22,7 +22,7 @@ function Contact() {
       </section>
       <section className='contact_form'>
         <div className='container'>
-          <div className='row'>
+          <div className='row my-5'>
             <div className='col-md-6 bookings'>
               <h3 className='mb-4'>Details</h3>
               <a href='#'>
@@ -65,41 +65,39 @@ function Contact() {
               </div>
             </div>
             <div className='col-md-6'>
-              <form action='' className='contact-form'>
-                <label>Name *</label>
+              <form
+                className='contact-form'
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                <label htmlFor='email' className='required'>
+                  Email
+                </label>
                 <br />
-                <input
-                  type='text'
-                  id='fname'
-                  placeholder='First Name'
-                  required
-                />
-                <input
-                  type='text'
-                  id='lname'
-                  placeholder='Last Name'
-                  required
-                />
+                <input type='email' id='email' className='email' />
                 <br />
-                <label htmlFor='mail'>Email</label>
+                <label htmlFor='fName' className='required'>
+                  First Name
+                </label>
                 <br />
-                <input type='email' id='mail' required />
+                <input type='text' id='fName' className='fName' />
                 <br />
-                <label htmlFor='message'>Message</label>
+                <label htmlFor='lName' className='required'>
+                  Last Name
+                </label>
                 <br />
-                <textarea
-                  name='message'
-                  id='message'
-                  rows='3'
-                  cols='40'
-                  required
-                ></textarea>
+                <input type='text' id='lName' className='lName' />
                 <br />
-                <input
-                  type='submit'
-                  value='Send'
-                  className='contact_form_send'
-                />
+                <label htmlFor='message' className='required'>
+                  Message
+                </label>
+                <br />
+                <input type='text' id='message' className='message' />
+                <br />
+                <button type='submit' className='submit-btn'>
+                  Send
+                </button>
               </form>
             </div>
           </div>
