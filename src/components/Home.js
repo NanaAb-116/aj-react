@@ -70,7 +70,7 @@ function Home() {
       <section className='newsletter'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5 ml-auto'>
+            <div className='col-md-6 ml-auto'>
               <form
                 className='newsletterform'
                 onSubmit={(e) => {

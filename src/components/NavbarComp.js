@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -14,81 +14,69 @@ import {
 import { Link } from 'react-router-dom';
 
 function NavbarComp() {
-  const [scrolled, setscrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', navChangeColorHandler);
-  });
-  function navChangeColorHandler() {
-    if (
-      document.body.scrollTop > 300 ||
-      document.documentElement.scrollTop > 500
-    ) {
-      setscrolled(true);
-    } else {
-      setscrolled(false);
-    }
-  }
-
+  const mobile = { marginBottom: '' };
+  const notMobile = { marginBottom: '-5rem' };
+  const hamburgerHandler = () => {
+    setOpen(!open);
+  };
   return (
     <>
-      <Navbar
-        expand='lg'
-        className={
-          scrolled
-            ? 'navbar fixed-top my-nav scroll'
-            : 'navbar fixed-top my-nav'
-        }
-      >
-        <Navbar.Brand className='AJ'>
+      <nav className='my-nav' style={open ? mobile : notMobile}>
+        <div className='AJ'>
           <Link to='/'>
-            <h3>Nana A.J</h3>
+            <img src='/images/Untitled-1.png' alt='' />
           </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls='basic-navbar-nav'>
-          <FaBars className='hamburgerBars' />
-        </Navbar.Toggle>
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='mr-auto'>
-            <ul className='navbar-nav'>
-              <li className='nav-item single_link '>
-                <Link to='/' className='nav-link'>
-                  Home
-                </Link>
-              </li>
-              <li className='nav-item single_link '>
-                <Link to='/news' className='nav-link'>
-                  News
-                </Link>
-              </li>
-              <li className='nav-item single_link'>
-                <HashLink to='/#videos' className='nav-link'>
-                  Videos
-                </HashLink>
-              </li>
-              <li className='nav-item single_link'>
-                <Link to='/bio' className='nav-link'>
-                  Bio
-                </Link>
-              </li>
-              <li className='nav-item single_link'>
-                <Link to='/tour' className='nav-link'>
-                  Tour
-                </Link>
-              </li>
-              {/* <li className='nav-item single_link'>
-                <Link to='/tour' className='nav-link'>
+        </div>
+        <FaBars className='hamburgerBars' onClick={hamburgerHandler} />
+        <div className={open ? 'nav-menu active-menu' : 'nav-menu'}>
+          <ul>
+            <li className='single_link '>
+              <Link to='/' className='nav-item' onClick={hamburgerHandler}>
+                Home
+              </Link>
+            </li>
+            <li className='single_link '>
+              <Link to='/news' className='nav-item' onClick={hamburgerHandler}>
+                News
+              </Link>
+            </li>
+            <li className='single_link'>
+              <HashLink
+                to='/#videos'
+                className='nav-item'
+                onClick={hamburgerHandler}
+              >
+                Videos
+              </HashLink>
+            </li>
+            <li className='single_link'>
+              <Link to='/bio' className='nav-item' onClick={hamburgerHandler}>
+                Bio
+              </Link>
+            </li>
+            <li className='single_link'>
+              <Link to='/tour' className='nav-item' onClick={hamburgerHandler}>
+                Tour
+              </Link>
+            </li>
+            {/* <li className='single_link'>
+                <Link to='/tour' className='nav-item'>
                   Merchandise
                 </Link>
               </li> */}
-              <li className='nav-item single_link'>
-                <Link to='/contact' className='nav-link'>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </Nav>
-          <div className=' nav_socials ml-auto'>
+            <li className='single_link'>
+              <Link
+                to='/contact'
+                className='nav-item'
+                onClick={hamburgerHandler}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <div className=' nav_socials'>
             <a
               target='blank'
               href='https://soundcloud.com/nana-a-j/sets/train-of-thought'
@@ -120,8 +108,8 @@ function NavbarComp() {
               <FaYoutube className='mx-2' />
             </a>
           </div>
-        </Navbar.Collapse>
-      </Navbar>
+        </div>
+      </nav>
     </>
   );
 }
