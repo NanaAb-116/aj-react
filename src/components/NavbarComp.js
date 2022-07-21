@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import {
   FaBars,

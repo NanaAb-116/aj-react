@@ -22,15 +22,17 @@ function News() {
               <h3>Nana A.J on Gorillas</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://gorillas.io/en/blog/black-history-month-at-gorillas'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://gorillas.io/en/blog/black-history-month-at-gorillas'
               >
                 <img
@@ -46,15 +48,17 @@ function News() {
               <h3>Nana A.J reassures on new single Bigger</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://gorillas.io/en/blog/pedal-records-newest-artists'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://gorillas.io/en/blog/pedal-records-newest-artists'
               >
                 <img
@@ -69,10 +73,11 @@ function News() {
               <h3>Nana A.J reassures on new single Bigger</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://www.ghanaweb.com/GhanaHomePage/entertainment/Nana-A-J-reassures-on-new-single-Bigger-1280410'
               >
-                Ream More
+                Read More
               </a>
             </div>
           </div>
@@ -81,15 +86,17 @@ function News() {
               <h3>Nana A.J featured in Pedal Records launch</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://gorillas.io/en/blog/gorillas-launches-pedal-records-music-label'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://gorillas.io/en/blog/gorillas-launches-pedal-records-music-label'
               >
                 <img className='img-fluid my-5' src='/images/gor.PNG' alt='' />
@@ -101,15 +108,17 @@ function News() {
               <h3>Nana A.J reassures on new single Bigger</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://www.ghanaweb.com/GhanaHomePage/entertainment/Nana-A-J-reassures-on-new-single-Bigger-1280410'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://www.ghanaweb.com/GhanaHomePage/entertainment/Nana-A-J-reassures-on-new-single-Bigger-1280410'
               >
                 <img
@@ -124,10 +133,11 @@ function News() {
               <h3>Nana A.J reassures on new single Bigger</h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://www.ghanaweb.com/GhanaHomePage/entertainment/Nana-A-J-reassures-on-new-single-Bigger-1280410'
               >
-                Ream More
+                Read More
               </a>
             </div>
           </div>
@@ -139,15 +149,17 @@ function News() {
               </h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://kuulpeeps.com/2021/08/13/nana-a-js-train-of-thought-ep-is-a-fleeting-express-worth-boarding/pop-culture'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://kuulpeeps.com/2021/08/13/nana-a-js-train-of-thought-ep-is-a-fleeting-express-worth-boarding/pop-culture'
               >
                 <img
@@ -167,15 +179,17 @@ function News() {
               </h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://newsghana.com.gh/nana-a-js-train-of-thought-ep-is-a-fleeting-express-worth-boarding/'
               >
-                Ream More
+                Read More
               </a>
             </div>
             <div className='col-md-6 mx-4'>
               <a
                 target='_blank'
+                rel='noreferrer'
                 href='https://www.ghanaweb.com/GhanaHomePage/entertainment/Nana-A-J-reassures-on-new-single-Bigger-1280410'
               >
                 <img
@@ -192,10 +206,11 @@ function News() {
               </h3>
               <a
                 target='_blank'
+                rel='noreferrer'
                 className='read-more'
                 href='https://newsghana.com.gh/nana-a-js-train-of-thought-ep-is-a-fleeting-express-worth-boarding/'
               >
-                Ream More
+                Read More
               </a>
             </div>
           </div>
