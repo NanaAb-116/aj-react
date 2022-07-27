@@ -34,7 +34,7 @@ function ContactForm() {
     setPerson({ ...person, [name]: value });
   };
 
-  const shadleSubmit = (e) => {
+  const hadleSubmit = (e) => {
     e.preventDefault();
 
     if ((person.email, person.firstName, person.lastName, person.message)) {
@@ -49,7 +49,7 @@ function ContactForm() {
 
   return (
     <div>
-      <form className='contact-form' onSubmit={shadleSubmit}>
+      <form className='contact-form' onSubmit={hadleSubmit}>
         <label htmlFor='email' className='required'>
           Email
         </label>

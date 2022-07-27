@@ -154,6 +154,7 @@
 .email-input {
   height: 3.6rem;
   padding: 1rem;
+  border-radius: 0;
 }
 .signup-btn {
   color: black;

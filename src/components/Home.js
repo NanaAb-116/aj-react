@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Newsletter from './Newsletter';
 
 import Videos from './Videos';
 
@@ -67,31 +68,7 @@ function Home() {
       <section id='videos'>
         <Videos />
       </section>
-      <section className='newsletter'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-6 ml-auto'>
-              <form
-                className='newsletterform'
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                <h1>New music coming soon!</h1>
-                <p>Sign up to be amongst the first to hear it.</p>
-                <input
-                  className='email-input'
-                  type='text'
-                  placeholder='Email Address'
-                />
-                <button type='submit' className='signup-btn'>
-                  Sign Up
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Newsletter />
     </>
   );
 }

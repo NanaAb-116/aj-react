@@ -20,6 +20,7 @@ function App() {
   } else {
     document.body.style.overflow = 'auto';
   }
+  document.body.style.height = '100%';
 
   return (
     <BrowserRouter>
