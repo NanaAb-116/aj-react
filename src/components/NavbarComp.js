@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import {
   FaBars,
@@ -12,9 +12,7 @@ import {
 
 import { Link } from 'react-router-dom';
 
-function NavbarComp() {
-  const [open, setOpen] = useState(false);
-
+function NavbarComp({ open, setOpen }) {
   const mobile = { marginBottom: '' };
   const notMobile = { marginBottom: '-5rem' };
   const hamburgerHandler = () => {
@@ -31,6 +29,7 @@ function NavbarComp() {
         <FaBars className='hamburgerBars' onClick={hamburgerHandler} />
         <div className={open ? 'nav-menu active-menu' : 'nav-menu'}>
           <ul>
+            <FaBars className='hamburgerBars' onClick={hamburgerHandler} />
             <li className='single_link '>
               <Link to='/' className='nav-item' onClick={hamburgerHandler}>
                 Home

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import SharedLayout from './components/SharedLayout';
@@ -12,10 +13,21 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  if (open) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
+  }
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<SharedLayout />}>
+        <Route
+          path='/'
+          element={<SharedLayout open={open} setOpen={setOpen} />}
+        >
           <Route index element={<Home />} />
           <Route path='news' element={<News />} />
           <Route path='videos' element={<Video />} />
