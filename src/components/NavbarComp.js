@@ -31,12 +31,16 @@ function NavbarComp({ open, setOpen }) {
           <ul>
             <FaBars className='hamburgerBars' onClick={hamburgerHandler} />
             <li className='single_link '>
-              <Link to='/' className='nav-item' onClick={hamburgerHandler}>
+              <Link to='/' className='nav-item' onClick={() => setOpen(false)}>
                 Home
               </Link>
             </li>
             <li className='single_link '>
-              <Link to='/news' className='nav-item' onClick={hamburgerHandler}>
+              <Link
+                to='/news'
+                className='nav-item'
+                onClick={() => setOpen(false)}
+              >
                 News
               </Link>
             </li>
@@ -44,18 +48,26 @@ function NavbarComp({ open, setOpen }) {
               <HashLink
                 to='/#videos'
                 className='nav-item'
-                onClick={hamburgerHandler}
+                onClick={() => setOpen(false)}
               >
                 Videos
               </HashLink>
             </li>
             <li className='single_link'>
-              <Link to='/bio' className='nav-item' onClick={hamburgerHandler}>
+              <Link
+                to='/bio'
+                className='nav-item'
+                onClick={() => setOpen(false)}
+              >
                 Bio
               </Link>
             </li>
             <li className='single_link'>
-              <Link to='/tour' className='nav-item' onClick={hamburgerHandler}>
+              <Link
+                to='/tour'
+                className='nav-item'
+                onClick={() => setOpen(false)}
+              >
                 Tour
               </Link>
             </li>
@@ -68,7 +80,7 @@ function NavbarComp({ open, setOpen }) {
               <Link
                 to='/contact'
                 className='nav-item'
-                onClick={hamburgerHandler}
+                onClick={() => setOpen(false)}
               >
                 Contact
               </Link>

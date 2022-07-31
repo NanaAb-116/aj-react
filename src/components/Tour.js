@@ -31,16 +31,8 @@ function Tour() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>TBA</td>
-                    <td>Saved to Serve Music Concert - France</td>
-                  </tr>
-                  <tr>
                     <td>4th November 2022</td>
                     <td>A.J and Friends</td>
-                  </tr>
-                  <tr>
-                    <td>TBA</td>
-                    <td>Special December</td>
                   </tr>
                 </tbody>
               </table>
@@ -58,10 +50,6 @@ function Tour() {
                   <tr>
                     <td>16th June, 2022</td>
                     <td>Umsonst und Draußen Festival Würzburg 2022</td>
-                  </tr>
-                  <tr>
-                    <td>26th May, 2022</td>
-                    <td>We Go Dey Cool EP Virtual Release Party</td>
                   </tr>
                 </thead>
                 <tbody>
@@ -82,7 +70,7 @@ function Tour() {
                     <td>Climate Justice Festival 2021</td>
                   </tr>
                   <tr>
-                    <td>September , 2021</td>
+                    <td>September, 2021</td>
                     <td>Fête de la Musique 2021</td>
                   </tr>
                 </tbody>
