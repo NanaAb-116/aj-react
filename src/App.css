@@ -62,12 +62,22 @@
 
 /* home section  */
 .home_section {
-  background-color: #89617a;
+  background: rgb(1, 58, 75);
+  background: linear-gradient(
+    153deg,
+    rgba(1, 58, 75, 1) 0%,
+    rgba(1, 54, 68, 1) 60%,
+    rgba(18, 41, 47, 1) 100%
+  );
+  text-shadow: 2px 2px black;
 }
+/* .home .btn {
+  box-shadow: 1px 1px 20px black !important;
+} */
 .home {
   height: 100vh;
   background-attachment: fixed;
-  background-image: url('/images/2206_PR_NanaA.J_CoolDown.jpg');
+  background-image: url("/images/aj.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -178,7 +188,7 @@
   width: 80%;
 }
 .required::after {
-  content: '*';
+  content: "*";
   padding-left: 0.2rem;
   color: red;
 }
